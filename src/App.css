@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Oswald', sans-serif;
 }
 
 .logo {
@@ -39,4 +42,94 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.beerImage{
+  height: 350px;
+}
+
+.beerList{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.beerCard{
+  border-radius: 50px;
+  padding: 50px;
+  width: 250px;
+}
+
+.beerCard:hover{
+  width: 255px;
+  background-color: #4a423b;
+}
+
+.beerCard:hover img{
+  height: 360px;
+}
+
+.beerCard:hover p, .beerCard:hover h3{
+  color: orange;
+}
+
+.beerCard h3{
+  font-size: 35px;
+  margin: 35px 0 0 0;
+}
+
+.material-icons{
+  font-size:15px;
+}
+
+.info{
+  color: orange;
+  position: relative;
+  display: inline-block;
+}
+
+.popup-info{
+  display: none;
+  position: absolute;
+  background-color:#23211e;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.info:hover .popup-info{
+  display: block;
+}
+
+.info:hover p{
+  color: white;
+}
+
+.ingredients{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingredientTxt{
+  width: 33%;
+}
+
+.beerTxt{
+  margin: 15px 0 0 0;
+}
+
+.info:hover .orange2{
+  color: rgb(195, 128, 5);
+}
+
+.error{
+  color: red;
+}
+
+.error-icon{
+  font-size: 40px;
 }
